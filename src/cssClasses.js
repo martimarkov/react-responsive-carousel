@@ -31,13 +31,19 @@ export default {
 
     ARROW_PREV: (classNamePrefix, disabled) =>
         classNames({
-            [classNamePrefix + 'control-arrow control-prev']: true,
+            [classNamePrefix +
+            'control-arrow ' +
+            classNamePrefix +
+            'control-prev']: true,
             [classNamePrefix + 'control-disabled']: disabled,
         }),
 
     ARROW_NEXT: (classNamePrefix, disabled) =>
         classNames({
-            [classNamePrefix + 'control-arrow control-next']: true,
+            [classNamePrefix +
+            'control-arrow ' +
+            classNamePrefix +
+            'control-next']: true,
             [classNamePrefix + 'control-disabled']: disabled,
         }),
 
